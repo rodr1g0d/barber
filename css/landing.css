@@ -132,6 +132,12 @@ img {
     font-size: 1.5rem;
 }
 
+.logo-icon-svg {
+    width: 28px;
+    height: 28px;
+    color: var(--gold);
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -552,8 +558,14 @@ img {
 }
 
 .problem-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.problem-icon svg {
+    width: 48px;
+    height: 48px;
+    color: var(--gold);
+    stroke-width: 1.5;
 }
 
 .problem-card h3 {
@@ -610,6 +622,13 @@ img {
 
 .feature-icon {
     font-size: 1.5rem;
+}
+
+.feature-icon-wrap svg {
+    width: 28px;
+    height: 28px;
+    color: var(--gold);
+    stroke-width: 1.5;
 }
 
 .feature-card h3 {
@@ -700,6 +719,13 @@ img {
 
 .step-icon {
     font-size: 2rem;
+}
+
+.step-visual svg {
+    width: 36px;
+    height: 36px;
+    color: var(--gold);
+    stroke-width: 1.5;
 }
 
 .step-connector {
@@ -817,6 +843,22 @@ img {
     color: var(--text-muted);
 }
 
+.check-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--gold);
+    stroke-width: 2.5;
+    flex-shrink: 0;
+}
+
+.x-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+
 .pricing-features .not-included {
     color: var(--text-muted);
 }
@@ -846,10 +888,16 @@ img {
 }
 
 .testimonial-stars {
-    color: var(--gold);
-    font-size: 1.2rem;
+    display: flex;
+    gap: 4px;
     margin-bottom: 16px;
-    letter-spacing: 4px;
+}
+
+.star-filled {
+    width: 20px;
+    height: 20px;
+    color: var(--gold);
+    fill: var(--gold);
 }
 
 .testimonial-text {
@@ -927,7 +975,16 @@ img {
     transition: var(--transition-fast);
 }
 
-.faq-item.active .faq-icon {
+.faq-icon-svg {
+    width: 24px;
+    height: 24px;
+    color: var(--gold);
+    transition: var(--transition-fast);
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon,
+.faq-item.active .faq-icon-svg {
     transform: rotate(45deg);
 }
 
@@ -1017,6 +1074,16 @@ img {
     margin-top: 16px;
     font-size: 0.85rem;
     color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.form-note-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--gold);
 }
 
 /* ===== FOOTER ===== */
@@ -1082,6 +1149,64 @@ img {
 
 .footer-bottom a {
     color: var(--gold);
+}
+
+/* Footer Social Icons */
+.footer-social {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background: rgba(212, 168, 83, 0.1);
+    border: 1px solid var(--border-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.footer-social a:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
+    color: var(--gold);
+    transition: var(--transition-fast);
+}
+
+.footer-social a:hover svg {
+    color: var(--bg-dark);
+}
+
+/* Heart Icon */
+.heart-icon {
+    width: 16px;
+    height: 16px;
+    color: #ef4444;
+    fill: #ef4444;
+    vertical-align: middle;
+}
+
+/* Badge Icon */
+.badge-icon-svg {
+    width: 18px;
+    height: 18px;
+    color: var(--gold);
+}
+
+/* Scroll Arrow */
+.scroll-arrow-svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-muted);
 }
 
 /* ===== ANIMATIONS ===== */

@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="/css/landing.css">
 </head>
@@ -20,7 +23,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">✂</span>
+                <i data-lucide="scissors" class="logo-icon-svg"></i>
                 <span class="logo-text">BARBER<span class="gold">.xrtec1</span></span>
             </a>
             <ul class="nav-menu" id="navMenu">
@@ -46,7 +49,7 @@
         </div>
         <div class="hero-content">
             <div class="hero-badge">
-                <span class="badge-icon">🚀</span>
+                <i data-lucide="sparkles" class="badge-icon-svg"></i>
                 <span>Novo: Agendamento via WhatsApp em breve</span>
             </div>
             <h1 class="hero-title">
@@ -60,11 +63,10 @@
             <div class="hero-ctas">
                 <a href="#contato" class="btn btn-primary">
                     <span>Começar Grátis</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
+                    <i data-lucide="arrow-right"></i>
                 </a>
                 <a href="#como-funciona" class="btn btn-secondary">
+                    <i data-lucide="play-circle"></i>
                     <span>Ver Demonstração</span>
                 </a>
             </div>
@@ -121,7 +123,7 @@
         </div>
         <div class="scroll-indicator">
             <span>Role para baixo</span>
-            <div class="scroll-arrow"></div>
+            <i data-lucide="chevron-down" class="scroll-arrow-svg"></i>
         </div>
     </section>
 
@@ -130,17 +132,23 @@
         <div class="container">
             <div class="problems-grid">
                 <div class="problem-card" data-aos="fade-up">
-                    <div class="problem-icon">📋</div>
+                    <div class="problem-icon">
+                        <i data-lucide="notebook-pen"></i>
+                    </div>
                     <h3>Cansado de agenda de papel?</h3>
                     <p>Confusão, rasuras e horários perdidos ficam no passado com nossa agenda digital inteligente.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="problem-icon">😤</div>
+                    <div class="problem-icon">
+                        <i data-lucide="clock-alert"></i>
+                    </div>
                     <h3>Clientes esquecendo horários?</h3>
                     <p>Lembretes automáticos por email reduzem faltas em até 70%.</p>
                 </div>
                 <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="problem-icon">💸</div>
+                    <div class="problem-icon">
+                        <i data-lucide="trending-down"></i>
+                    </div>
                     <h3>Sem controle financeiro?</h3>
                     <p>Saiba exatamente quanto entra e sai. Relatórios claros e comissões calculadas automaticamente.</p>
                 </div>
@@ -160,7 +168,7 @@
             <div class="features-grid">
                 <div class="feature-card featured">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">📅</span>
+                        <i data-lucide="calendar-check"></i>
                     </div>
                     <h3>Agendamento Online</h3>
                     <p>Seus clientes agendam 24h pelo celular. Você só confirma e atende.</p>
@@ -173,7 +181,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">📍</span>
+                        <i data-lucide="map-pin"></i>
                     </div>
                     <h3>Localização no Mapa</h3>
                     <p>Cliente vê a rota até sua barbearia direto no app.</p>
@@ -181,7 +189,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">💰</span>
+                        <i data-lucide="wallet"></i>
                     </div>
                     <h3>Gestão Financeira</h3>
                     <p>Controle entradas, saídas e lucro em tempo real.</p>
@@ -189,7 +197,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">📦</span>
+                        <i data-lucide="package"></i>
                     </div>
                     <h3>Controle de Estoque</h3>
                     <p>Saiba quando repor produtos antes de acabar.</p>
@@ -197,7 +205,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">📊</span>
+                        <i data-lucide="bar-chart-3"></i>
                     </div>
                     <h3>Relatórios Completos</h3>
                     <p>Dashboards visuais com métricas do seu negócio.</p>
@@ -205,7 +213,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">👥</span>
+                        <i data-lucide="users"></i>
                     </div>
                     <h3>Gestão de Clientes</h3>
                     <p>Histórico completo de cada cliente e preferências.</p>
@@ -213,7 +221,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">✂️</span>
+                        <i data-lucide="scissors"></i>
                     </div>
                     <h3>Controle por Profissional</h3>
                     <p>Cada barbeiro com sua agenda e comissões.</p>
@@ -221,7 +229,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">🔔</span>
+                        <i data-lucide="bell-ring"></i>
                     </div>
                     <h3>Lembretes Automáticos</h3>
                     <p>Email enviado automaticamente antes do horário.</p>
@@ -229,7 +237,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">⭐</span>
+                        <i data-lucide="star"></i>
                     </div>
                     <h3>Avaliações</h3>
                     <p>Clientes avaliam e você melhora cada vez mais.</p>
@@ -237,7 +245,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">📸</span>
+                        <i data-lucide="image"></i>
                     </div>
                     <h3>Portfólio</h3>
                     <p>Mostre seus melhores trabalhos e atraia clientes.</p>
@@ -245,7 +253,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">💳</span>
+                        <i data-lucide="qr-code"></i>
                     </div>
                     <h3>Pagamento via PIX</h3>
                     <p>Receba antecipado ou na hora via PIX.</p>
@@ -253,7 +261,7 @@
 
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
-                        <span class="feature-icon">⏳</span>
+                        <i data-lucide="list-ordered"></i>
                     </div>
                     <h3>Lista de Espera</h3>
                     <p>Lotou? Cliente entra na fila e é avisado.</p>
@@ -278,7 +286,7 @@
                         <p>Crie sua conta em menos de 2 minutos. Adicione nome, endereço e logo.</p>
                     </div>
                     <div class="step-visual">
-                        <div class="step-icon">🏪</div>
+                        <i data-lucide="store"></i>
                     </div>
                 </div>
 
@@ -291,7 +299,7 @@
                         <p>Adicione os serviços oferecidos, preços e horários de cada profissional.</p>
                     </div>
                     <div class="step-visual">
-                        <div class="step-icon">⚙️</div>
+                        <i data-lucide="settings"></i>
                     </div>
                 </div>
 
@@ -304,7 +312,7 @@
                         <p>Divulgue o link da sua barbearia e comece a receber agendamentos!</p>
                     </div>
                     <div class="step-visual">
-                        <div class="step-icon">🚀</div>
+                        <i data-lucide="rocket"></i>
                     </div>
                 </div>
             </div>
@@ -333,35 +341,35 @@
                     </div>
                     <ul class="pricing-features">
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             1 Profissional
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Agendamento Online
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Gestão de Clientes
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Lembretes por Email
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Relatório Básico
                         </li>
                         <li class="not-included">
-                            <span class="x">✕</span>
+                            <i data-lucide="x" class="x-icon"></i>
                             Controle de Estoque
                         </li>
                         <li class="not-included">
-                            <span class="x">✕</span>
+                            <i data-lucide="x" class="x-icon"></i>
                             Múltiplos Profissionais
                         </li>
                         <li class="not-included">
-                            <span class="x">✕</span>
+                            <i data-lucide="x" class="x-icon"></i>
                             Gestão Financeira Completa
                         </li>
                     </ul>
@@ -381,43 +389,43 @@
                     </div>
                     <ul class="pricing-features">
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Profissionais Ilimitados
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Agendamento Online
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Gestão de Clientes
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Lembretes por Email
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Relatórios Completos
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Controle de Estoque
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Gestão Financeira
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Comissões Automáticas
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Pagamento via PIX
                         </li>
                         <li class="included">
-                            <span class="check">✓</span>
+                            <i data-lucide="check" class="check-icon"></i>
                             Suporte Prioritário
                         </li>
                     </ul>
@@ -437,7 +445,13 @@
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
                     <p class="testimonial-text">"Antes eu perdia horas organizando a agenda. Agora os clientes agendam sozinhos e eu foco no que importa: cortar cabelo."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">RC</div>
@@ -449,7 +463,13 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
                     <p class="testimonial-text">"O controle financeiro mudou meu negócio. Agora sei exatamente quanto cada barbeiro produz e quanto sobra no final do mês."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">MS</div>
@@ -461,7 +481,13 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
                     <p class="testimonial-text">"Meus clientes amam poder agendar pelo celular. As faltas diminuíram muito depois que comecei a usar os lembretes automáticos."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">FL</div>
@@ -487,7 +513,7 @@
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Preciso instalar algum programa?</span>
-                        <span class="faq-icon">+</span>
+                        <i data-lucide="plus" class="faq-icon-svg"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Não! O sistema funciona 100% online, direto no navegador. Você pode acessar de qualquer computador, tablet ou celular.</p>
@@ -497,7 +523,7 @@
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Como meus clientes vão agendar?</span>
-                        <span class="faq-icon">+</span>
+                        <i data-lucide="plus" class="faq-icon-svg"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Você recebe um link exclusivo da sua barbearia (ex: barber.xrtec1.com/suabarbearia). Compartilhe nas redes sociais, WhatsApp ou coloque um QR Code na loja. Os clientes acessam e agendam em segundos.</p>
@@ -507,7 +533,7 @@
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Posso cancelar a qualquer momento?</span>
-                        <span class="faq-icon">+</span>
+                        <i data-lucide="plus" class="faq-icon-svg"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Sim! Não há fidelidade. Você pode cancelar quando quiser diretamente pelo painel, sem burocracia.</p>
@@ -517,7 +543,7 @@
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Como funciona o período de teste?</span>
-                        <span class="faq-icon">+</span>
+                        <i data-lucide="plus" class="faq-icon-svg"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Você tem 7 dias para testar todas as funcionalidades gratuitamente. Não pedimos cartão de crédito. Se gostar, escolhe um plano e continua. Se não, seus dados são apagados automaticamente.</p>
@@ -527,7 +553,7 @@
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Meus dados estão seguros?</span>
-                        <span class="faq-icon">+</span>
+                        <i data-lucide="plus" class="faq-icon-svg"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Sim! Usamos criptografia de ponta e servidores seguros na nuvem. Seus dados e dos seus clientes estão protegidos com as mesmas tecnologias usadas por bancos.</p>
@@ -537,7 +563,7 @@
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Vocês dão suporte?</span>
-                        <span class="faq-icon">+</span>
+                        <i data-lucide="plus" class="faq-icon-svg"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Claro! Temos suporte por email e chat. No plano Pro, você tem suporte prioritário com resposta em até 2 horas.</p>
@@ -565,11 +591,12 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-large">
                         <span>Quero Testar Grátis</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                        <i data-lucide="arrow-right"></i>
                     </button>
-                    <p class="form-note">Seus dados estão seguros. Não enviamos spam.</p>
+                    <p class="form-note">
+                        <i data-lucide="shield-check" class="form-note-icon"></i>
+                        Seus dados estão seguros. Não enviamos spam.
+                    </p>
                 </form>
             </div>
         </div>
@@ -581,10 +608,15 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="footer-logo">
-                        <span class="logo-icon">✂</span>
+                        <i data-lucide="scissors" class="logo-icon-svg"></i>
                         <span class="logo-text">BARBER<span class="gold">.xrtec1</span></span>
                     </a>
                     <p>Sistema completo de gestão para barbearias modernas.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    </div>
                 </div>
 
                 <div class="footer-links">
@@ -616,12 +648,16 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2025 Barber.xrtec1 - Todos os direitos reservados</p>
-                <p>Feito com ❤️ por <a href="https://xrtec1.com" target="_blank">XRTEC1</a></p>
+                <p>Feito com <i data-lucide="heart" class="heart-icon"></i> por <a href="https://xrtec1.com" target="_blank">XRTEC1</a></p>
             </div>
         </div>
     </footer>
 
     <!-- JS -->
     <script src="/js/landing.js"></script>
+    <script>
+        // Inicializar ícones Lucide
+        lucide.createIcons();
+    </script>
 </body>
 </html>
